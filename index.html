@@ -10,6 +10,7 @@
     <script>
         window.onload = function() {
       // Receiver window
+            console.log('onload message: ' + event.data);
         window.addEventListener('message', function(event) {
           console.log('message message: ' + event.data);
           if (event.origin === 'https://danish777.github.io/app1/') {
@@ -21,6 +22,6 @@
     </script>
     
    <!-- You can also include external script files -->
-    <div onclick="postData()">SEND DATA TO SERVER</div>
+   <p>Recived........</p>
 </body>
 </html>
